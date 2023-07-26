@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>My spotify</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="bg-black">
+            <div class="sidebar-header bg-black">
+                <img src="img/spotify logo.png" height="50px" width="150px" alt="">
+            </div>
+
+            <ul class="list-unstyled components bg-black sidebar-li">
+
+                <li class="">
+                    <a href="index5.html" data-toggle="collapse" aria-expanded="false" class=""><img
+                            src="img/home white.png" height="25px" width="25px" alt=""> Home</a>
+
+                </li>
+                <li>
+                    <a href="#"><img src="img/search white.png" height=" 25px" width="25px" alt="">Search</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class=""><img
+                            src="img/library white.png" height=" 25px" width="25px" alt="">Your Library</a>
+
+                </li>
+                <br>
+                <li>
+                    <a href="#"><img src="img/playlist white 6.png" height="30px" width="30px" alt="">Creat Playlist</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/like white.png" height="25px" width="25px" alt="">Liked Songs</a>
+                </li>
+
+            </ul>
+
+            <ul class="list-unstyled sidebar-li fixed-bottom">
+                <li><a href="">Cookies</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content" class="bg-dark">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black p-1 m-0">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn bg-black text-black">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify "></i>
+                    </button>
+                    <!--         search input      -->
+                    <input type="text" name="search" placeholder="Search.." class="text-white input-head">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="btn nav-btn1" href="#">Sign up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn nav-btn2" href="#">Login</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--    cards 1  start now-->
+            <div class="song-cards-title">
+                <a href="" class="text-white">Focus</a>
+            </div>
+            <!--                    cards 1 start now-->
+            <div class="card-group m-3 bg-dark">
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-1" src="song-1s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-1s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/let me down pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Let me down slowly</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-2" src="song-2s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-2s').play(); "
+                            onclick="document.getElementById('song-2s').end();" class=" bg-dark text-white audio-btn">
+                            <img src="img/imagine dragon pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Imagine Dragons</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-3" src="song-3s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-3s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/coca cola pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">LukaChuppi</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-4" src="song-4s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-4s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/main tera boyfriend pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Main Tera Boyfriend</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-5" src="song-5s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-5s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/senorita pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Señorita</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-6" src="song-6s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-6s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/stay.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Stay</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="text-white song-cards-title-1">
+                <a href=""> Spotify Playlist</a>
+            </div>
+            <!--  cards 2 start now-->
+            <div class="card-group m-3">
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-7" src="song-7s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-7s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/let me down pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Let me down slowly</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-8" src="song-8s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-8s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/imagine dragon pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Imagine Dragon</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-9" src="song-9s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-9s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/coca cola pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Coca Cola</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-10" src="song-10s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-10s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/main tera boyfriend pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Main Tera Boyfriend</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-11" src="song-11s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-11s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/senorita pic.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Señorita</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card mx-3 border bg-dark">
+
+                    <div class="card-body bg-dark">
+                        <audio id="song-12" src="song-12s" preload="auto"></audio>
+                        <button onclick="document.getElementById('song-12s').play();"
+                            class="bg-dark text-white audio-btn">
+                            <img src="img/stay.jpg" class="card-img-top card-img-size" alt="...">
+                            <h4 class="card-title text-white">Stay</h4>
+                            <p class="card-text text-white">2021 . The Kid LAROI, Justin Bieber
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black">
+
+        <div class="footer">
+
+            <div class="audio-control bg-dark">
+
+                <audio controls id="song-1s">
+                    <source src="audio/Alec Benjamin - Let Me Down Slowly (Lyrics).mkv" type="audio/mkv">
+                    <source src="audio/Alec Benjamin - Let Me Down Slowly (Lyrics).mkv" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-2s">
+                    <source src="audio/Imagine Dragons - Believer.m4a" type="audio/m4a">
+                    <source src="audio/Imagine Dragons - Believer.m4a" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-3s">
+                    <source
+                        src="audio/LukaChuppiCOCACOLASongKartikA,KritiSTonyKakkarTanishkBagchiNehaKakkarYoungDesi_1639744908743.mp3"
+                        type="audio/mp3">
+                    <source
+                        src="audio/LukaChuppiCOCACOLASongKartikA,KritiSTonyKakkarTanishkBagchiNehaKakkarYoungDesi_1639744908743.mp3"
+                        type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-4s">
+                    <source
+                        src="audio/MainTeraBoyfriendLyricalVideoRaabtaArijitSinghNehaKakkarSushantSinghKritiSanon_1639744876172.mp3"
+                        type="audio/mp3">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-5s">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-6s">
+                    <source src="audio/The Kid LAROI, Justin Bieber - Stay (Lyrics).mp3" type="audio/mp3">
+                    <source src="audio/The Kid LAROI, Justin Bieber - Stay (Lyrics).mp3" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-7s">
+                    <source src="audio/Alec Benjamin - Let Me Down Slowly (Lyrics).mkv" type="audio/mkv">
+                    <source src="audio/Alec Benjamin - Let Me Down Slowly (Lyrics).mkv" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-8s">
+                    <source src="audio/Imagine Dragons - Believer.m4a" type="audio/m4a">
+                    <source src="audio/Imagine Dragons - Believer.m4a" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-9s">
+                    <source
+                        src="audio/LukaChuppiCOCACOLASongKartikA,KritiSTonyKakkarTanishkBagchiNehaKakkarYoungDesi_1639744908743.mp3"
+                        type="audio/mp3">
+                    <source
+                        src="audio/LukaChuppiCOCACOLASongKartikA,KritiSTonyKakkarTanishkBagchiNehaKakkarYoungDesi_1639744908743.mp3"
+                        type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-10s">
+                    <source
+                        src="audio/MainTeraBoyfriendLyricalVideoRaabtaArijitSinghNehaKakkarSushantSinghKritiSanon_1639744876172.mp3"
+                        type="audio/mp3">
+                    <source
+                        src="audio/MainTeraBoyfriendLyricalVideoRaabtaArijitSinghNehaKakkarSushantSinghKritiSanon_1639744876172.mp3"
+                        type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-11s">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls id="song-12s">
+                    <source src="audio/The Kid LAROI, Justin Bieber - Stay (Lyrics).mp3" type="audio/mp3">
+                    <source src="audio/ShawnMendes,CamilaCabello–Señorita(Lyrics)_1639816424290.mp3" type="audio/mp3">
+
+                    Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

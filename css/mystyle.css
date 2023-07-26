@@ -1,0 +1,216 @@
+/*  w3 school css for searchbar*/
+input[type=text] {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 20px;
+    background-color: rgb(96, 95, 95);
+    
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+
+
+  
+  input[type=text]:focus {
+    width: 30%;
+    background-color:rgba(96, 95, 95, 0.7) ;
+  }
+  .input-head::placeholder{
+    color: black;
+
+  }
+  
+ 
+/*-----------------------------*/
+#sidebar ul li a img{
+    margin-right: 10px;
+    padding: 0%;
+    margin: 0px 10px 0px 0px;
+
+}
+.sidebar-li li{
+    padding-left: 15px;
+    margin: 0px;
+    padding-top: 0%; ;
+}
+.sidebar-li a{
+    color: gray;
+    text-decoration: none;
+}
+.sidebar-li a:hover{
+    color: white;
+    
+    
+}
+
+.nav-btn1{
+    color: gray;
+    font-weight: bold;
+}
+.nav-btn2{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+.card{
+    transition: all 0.4s;
+    
+}
+.card:hover{
+    transform: scale(1.1); 
+   
+}
+.song-cards-title{
+    margin: 0px;
+    padding-left: 20px;
+    width:100px;
+    
+}
+.song-cards-title a{
+    display: grid;
+    text-decoration: none;
+    
+    font-size: 23px;
+    color: white;
+}
+.song-cards-title a:hover{
+    text-decoration: underline;
+    display: inline-block;
+    
+}
+.song-cards-title-1{
+    margin: 0px;
+    padding-left: 20px;
+    width:170px;
+    
+}
+.song-cards-title-1 a{
+    display: grid;
+    text-decoration: none;
+    
+    font-size: 23px;
+    color: white;
+}
+.song-cards-title-1 a:hover{
+    text-decoration: underline;
+    display: inline-block;
+    
+}
+.card-img-size{
+    height: 150px;
+   box-shadow: 0px 0px 20px 0px grey;
+   border-radius: 10px;
+}
+.audio-btn{
+    border: none;
+    border-color: none;
+    text-align: initial;
+    width: 100%;
+}
+.audio-btn:hover{
+    background-color: white;
+}
+.border{
+    border-radius: 10px;
+}
+
+.audio-control{
+   
+    text-align: center;
+    position: sticky;
+    width: ;
+    content: cover;
+    margin-left: 249.5px;
+}
+
+/*         song attached with controller      */
+.footer{
+   
+}
+.audio-1-control{
+    content-visibility: hidden;
+}
+.audio-1-control:hover{
+    src: song-1;
+    content-visibility: visible;
+}
+.song-1{
+    src:song-1s;
+}
+
+.song-2{
+    src:song-2s;
+}
+.song-3{
+    src:song-3s;
+}
+.song-4{
+    src:song-4s;
+}
+.song-5{
+    src:song-5s;
+}
+.song-6{
+    src:song-6s;
+}
+.song-7{
+    src:song-7s;
+}
+.song-8{
+    src:song-8s;
+}
+.song-9{
+    src:song-9s;
+}
+.song-10{
+    src:song-10s;
+}
+.song-11{
+    src:song-11s;
+}
+.song-12{
+    src:song-12s;
+}
+/*   song-controller-end         */
+/*    son controller size manage   */
+#song-1s{
+    height:30px ;   
+}
+#song-2s{
+    height:30px ;   
+}
+#song-3s{
+    height:30px ;   
+}
+#song-4s{
+    height:30px ;   
+}
+#song-5s{
+    height:30px ;   
+}
+#song-6s{
+    height:30px ;   
+}
+#song-7s{
+    height:30px ;   
+}
+#song-8s{
+    height:30px ;   
+}
+#song-9s{
+    height:30px ;   
+}
+#song-10s{
+    height:30px ;   
+}
+#song-11s{
+    height:30px ;   
+}
+#song-12s{
+    height:30px ;   
+}
